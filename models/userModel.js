@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema(
     {
         userId: {
             type: Number,
-            //unique: [true, "userId already exists"],
+            unique: [true, "userId already exists"],
             required: true
         },
         username: {
